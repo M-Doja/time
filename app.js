@@ -23,7 +23,9 @@ var  app = express();
 var url;
 
 if (process.env.NODE_ENV === 'production') {
-  url = config.DB_Prod_URI;
+  // url = config.DB_Prod_URI;
+  url = 'mongodb://localhost:27017/showTimeDB';
+
 }else {
   url = 'mongodb://localhost:27017/showTimeDB';
 }
